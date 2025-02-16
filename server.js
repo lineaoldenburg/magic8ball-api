@@ -43,5 +43,5 @@ app.post("/responses", async (req, res) => {
 });
 
 // Starta servern
-const port = process.env.PORT || 3000;
+const port = 3000;
 app.listen(PORT, () => console.log(`✅ Server kör på port ${PORT}`));
