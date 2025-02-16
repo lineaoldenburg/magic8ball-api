@@ -42,6 +42,8 @@ app.post("/responses", async (req, res) => {
     }
 });
 
-// Starta servern
-const port = 3000;
-app.listen(PORT, () => console.log(`✅ Server kör på port ${PORT}`));
+// Start the server
+app.listen(port, () => {
+  console.log(`Magic 8-Ball API is running at http://localhost:${port}`);
+});
+
