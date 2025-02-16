@@ -42,8 +42,10 @@ app.post("/responses", async (req, res) => {
     }
 });
 
-// Start the server
+const port = process.env.PORT || 3000; // Default to 3000 if no environment variable is set
+
 app.listen(port, () => {
-  console.log(`Magic 8-Ball API is running at http://localhost:${port}`);
+  console.log(`Magic 8-Ball API is running at https://magic8ball-api.onrender.com`);
 });
+
 
